@@ -1,4 +1,4 @@
-# project-contribute
+# contribute.
 
 A web application designed to facilitate fundraising and archive projects at colleges and other organisations. 
 
