@@ -224,14 +224,13 @@ footer p {
 
 @media (max-width: 768px) {
     nav {
-        flex-direction: column;
-        align-items: center;
+        text-align: left; /* Ensure nav content stays aligned to the left */
     }
 
     nav ul {
         margin-top: 1rem;
         flex-direction: column;
-        align-items: center;
+        align-items: left;
     }
 
     nav ul li {
@@ -259,6 +258,12 @@ footer p {
 
     .step {
         min-width: 100%;
+    }
+
+    .url-slider {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start; /* Align URLs to the start (left) */
     }
 }
 
@@ -289,36 +294,6 @@ footer p {
     footer {
         padding: 2rem 0.5rem;
         text-align: center;
-    }
-}
-
-/* Add this for better mobile responsiveness */
-@media (max-width: 600px) {
-    .url-slider {
-        font-size: 18px;
-    }
-
-    .feature-card, .engagement-card, .testimonial-card {
-        padding: 1rem;
-    }
-
-    .step-number {
-        width: 30px;
-        height: 30px;
-        line-height: 30px;
-        font-size: 1rem;
-    }
-
-    h1, h2 {
-        font-size: 1.5rem;
-    }
-
-    #hero h1 {
-        font-size: 2rem;
-    }
-
-    #hero p {
-        font-size: 1rem;
     }
 }
 
