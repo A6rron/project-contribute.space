@@ -318,5 +318,13 @@ footer p {
         width: 100%; /* Ensure the container takes the full width of the screen */
         font-size: 16px; /* Adjust font size for better fit */
     }
+
+    #hero h1 {
+        font-size: 1.5rem; /* Adjust font size for smaller screens */
+    }
+
+    #hero p {
+        font-size: 1rem; /* Adjust font size for smaller screens */
+    }
 }
 
