@@ -58,11 +58,23 @@ nav {
     align-items: center;
     max-width: 1200px;
     margin: 0 auto;
+    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
 }
 
 nav ul {
     display: flex;
     list-style: none;
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: #ccc;
+    cursor: pointer;
+    margin-left: auto; /* Push the button to the right */
+    margin-top: 15px; /* Lower the button by 1 pixel */
 }
 
 nav ul li {
@@ -122,29 +134,34 @@ p {
     padding: 0.75rem 1.5rem;
     text-decoration: none;
     font-size: 1rem;
-    border: none;
+    border: 2px solid transparent; /* Add border */
     border-radius: 4px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, border-color 0.3s ease, transform 0.3s ease; /* Add transform transition */
 }
 
 .btn.primary {
     background-color: #040458;
     color: white;
+    border-color: #040458; /* Set border color */
 }
 
 .btn.primary:hover {
     background-color: #000000;
+    border-color: #000000; /* Change border color on hover */
+    transform: scale(1.05); /* Add scale effect on hover */
 }
 
 .btn.secondary {
     background-color: #4c4c4c8e;
     color: #ffffff;
-    border: 1px solid #ffffff;
+    border: 2px solid #ffffff; /* Set border color */
 }
 
 .btn.secondary:hover {
     background-color: #000000;
+    border-color: #000000; /* Change border color on hover */
+    transform: scale(1.05); /* Add scale effect on hover */
 }
 
 .feature-grid, .engagement-grid {
@@ -224,17 +241,33 @@ footer p {
 
 @media (max-width: 768px) {
     nav {
-        text-align: left; /* Ensure nav content stays aligned to the left */
+        text-align: left;
+        flex-direction: column; /* Stack nav items vertically */
+        align-items: flex-start; /* Align items to the left */
     }
 
-    nav ul {
-        margin-top: 1rem;
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
         flex-direction: column;
-        align-items: left;
+        align-items: flex-start; /* Align items to the left */
+        width: 100%; /* Full width for better spacing */
+    }
+
+    .nav-links.active {
+        display: flex;
     }
 
     nav ul li {
         margin-left: 0;
+        margin-bottom: 0.5rem; /* Reduced from 1rem for tighter spacing */
+    }
+
+    /* Add space between nav items */
+    nav > *:not(:last-child) {
         margin-bottom: 1rem;
     }
 
@@ -294,6 +327,15 @@ footer p {
     footer {
         padding: 2rem 0.5rem;
         text-align: center;
+    }
+
+    .url-slider {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start; /* Align URLs to the start (left) */
+        word-wrap: break-word; /* Ensure long words break to fit within the container */
+        overflow-wrap: break-word; /* Ensure long words break to fit within the container */
+        width: 100%; /* Ensure the container takes the full width of the screen */
     }
 }
 

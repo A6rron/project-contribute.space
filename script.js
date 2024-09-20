@@ -6,16 +6,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    const form = document.querySelector('form');
-    if (form) {
-        form.addEventListener('submit', e => {
-            e.preventDefault();
-            const email = form.querySelector('input[type="email"]').value;
-            alert(email ? 'Thank you for signing up!' : 'Please enter a valid email address.');
-            if (email) form.reset();
-        });
-    }
-
     const observer = new IntersectionObserver(entries => {
         entries.forEach(entry => {
             if (entry.isIntersecting) entry.target.classList.add('animate');
@@ -25,13 +15,21 @@ document.addEventListener('DOMContentLoaded', () => {
     document.querySelectorAll('.feature-card, .engagement-card, .testimonial-card').forEach(element => {
         observer.observe(element);
     });
+
+    // Toggle navigation menu
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navLinks = document.querySelector('.nav-links');
+
+    menuToggle.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+    });
 });
 
 const urls = document.querySelectorAll('.url');
 let index = 0;
 
 setInterval(() => {
-urls[index].classList.remove('active');
-index = (index + 1) % urls.length;
-urls[index].classList.add('active');
+    urls[index].classList.remove('active');
+    index = (index + 1) % urls.length;
+    urls[index].classList.add('active');
 }, 2000);
