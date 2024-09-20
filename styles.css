@@ -66,17 +66,6 @@ nav ul {
     list-style: none;
 }
 
-.menu-toggle {
-    display: none;
-    font-size: 2rem;
-    background: none;
-    border: none;
-    color: #ccc;
-    cursor: pointer;
-    margin-left: auto; /* Push the button to the right */
-    margin-top: 15px; /* Lower the button by 1 pixel */
-}
-
 nav ul li {
     margin-left: 1rem;
 }
@@ -246,19 +235,10 @@ footer p {
         align-items: flex-start; /* Align items to the left */
     }
 
-    .menu-toggle {
-        display: block;
-    }
-
     .nav-links {
-        display: none;
         flex-direction: column;
         align-items: flex-start; /* Align items to the left */
         width: 100%; /* Full width for better spacing */
-    }
-
-    .nav-links.active {
-        display: flex;
     }
 
     nav ul li {
@@ -336,6 +316,7 @@ footer p {
         word-wrap: break-word; /* Ensure long words break to fit within the container */
         overflow-wrap: break-word; /* Ensure long words break to fit within the container */
         width: 100%; /* Ensure the container takes the full width of the screen */
+        font-size: 16px; /* Adjust font size for better fit */
     }
 }
 

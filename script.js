@@ -16,13 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
         observer.observe(element);
     });
 
-    // Toggle navigation menu
-    const menuToggle = document.querySelector('.menu-toggle');
-    const navLinks = document.querySelector('.nav-links');
-
-    menuToggle.addEventListener('click', () => {
-        navLinks.classList.toggle('active');
-    });
+    // Removed menu toggle functionality
 });
 
 const urls = document.querySelectorAll('.url');
