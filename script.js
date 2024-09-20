@@ -26,3 +26,12 @@ document.addEventListener('DOMContentLoaded', () => {
         observer.observe(element);
     });
 });
+
+const urls = document.querySelectorAll('.url');
+let index = 0;
+
+setInterval(() => {
+urls[index].classList.remove('active');
+index = (index + 1) % urls.length;
+urls[index].classList.add('active');
+}, 2000);
