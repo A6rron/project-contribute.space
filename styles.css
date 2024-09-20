@@ -210,18 +210,70 @@ footer p {
 @media (max-width: 768px) {
     nav {
         flex-direction: column;
+        align-items: center; /* Center align items */
     }
 
     nav ul {
         margin-top: 1rem;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin-left: 0;
+        margin-bottom: 1rem;
     }
 
     .cta-buttons {
         flex-direction: column;
+        align-items: center; /* Center align buttons */
     }
 
     .btn {
         width: 100%;
+    }
+
+    .feature-grid, .engagement-grid, .testimonial-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .steps {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .step {
+        min-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 0 1rem;
+    }
+
+    header {
+        padding: 0.5rem;
+        text-align: center; /* Center align header text */
+    }
+
+    main {
+        padding: 1rem 0.5rem;
+    }
+
+    #hero {
+        padding: 2rem 0.5rem;
+        text-align: center; /* Center align hero text */
+    }
+
+    .btn {
+        padding: 0.5rem 1rem;
+        font-size: 0.875rem;
+    }
+
+    footer {
+        padding: 2rem 0.5rem;
+        text-align: center; /* Center align footer text */
     }
 }
 
