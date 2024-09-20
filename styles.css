@@ -1,11 +1,12 @@
-* {
+* 
+{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
 body {
-    font-family: 'Roboto', Arial, sans-serif; /* Updated to Roboto font */
+    font-family: 'Montserrat', sans-serif; /* Updated font family */
     font-weight: 300; /* Light font weight */
     line-height: 1.6;
     color: #ccc;
@@ -95,6 +96,7 @@ p {
 
 .btn {
     padding: 0.75rem 1.5rem;
+     text-decoration: none; /* Remove underline */
     font-size: 1rem;
     border: none;
     border-radius: 4px;
@@ -222,3 +224,4 @@ footer p {
         width: 100%;
     }
 }
+
