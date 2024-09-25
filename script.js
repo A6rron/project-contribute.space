@@ -8,9 +8,22 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const observer = new IntersectionObserver(entries => {
         entries.forEach(entry => {
-            if (entry.isIntersecting) entry.target.classList.add('animate');
+            if (entry.isIntersecting) {
+                entry.target.classList.add('animate'); // Add animation class
+                // Add a delay for each feature card
+                const cards = document.querySelectorAll('.feature-card');
+                cards.forEach((card, index) => {
+                    setTimeout(() => {
+                        card.classList.add('visible'); // Make card visible
+                    }, index * 200); // Delay for each card
+                });
+            }
         });
     }, { threshold: 0.1 });
+
+    // Observe the features section
+    const featuresSection = document.querySelector('#features');
+    observer.observe(featuresSection);
 
     document.querySelectorAll('.feature-card, .engagement-card, .testimonial-card').forEach(element => {
         observer.observe(element);
@@ -27,3 +40,5 @@ setInterval(() => {
     index = (index + 1) % urls.length;
     urls[index].classList.add('active');
 }, 2000);
+
+
