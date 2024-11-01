@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>projects page</title>
+    <title>Create a Fundraiser</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap" rel="stylesheet">
 </head>
@@ -11,7 +11,7 @@
     <header>
         <nav>
             <a href="index.html">
-                <div class="url-slider" style="display: flex; justify-content: center; align-items: center; text-align: center;">
+                <div class="url-slider">
                     <span class="url active">a6rron.contribute.space</span>
                     <span class="url">nilambur.contribute.space</span>
                     <span class="url">savewayanad.contribute.space</span>
@@ -23,40 +23,27 @@
     </header>
 
     <main>
-        <section id="projects">
-            <h2>Fundraising Projects</h2>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <img src="https://classplusapp.com/growth/wp-content/uploads/2022/08/5-Tips-to-Start-a-Successful-Rural-School.jpg" alt="Rural School Development" class="project-image">
-                    <h3>Rural School Development</h3>
-                    <p>Help build and equip a new school in a rural village to provide quality education to underprivileged children.</p>
-                    <a href="payment.html"><button class="btn primary">Donate</button></a>
+        <section id="create-project" class="section">
+            <h2>Create a New Project</h2>
+            <form id="project-form" class="form">
+                <div class="form-group">
+                    <label for="project-name">Project Name</label>
+                    <input type="text" id="project-name" name="project-name" required>
                 </div>
-                <div class="project-card">
-                    <img src="https://www.livemint.com/lm-img/img/2023/04/05/1600x900/AIIMS_1680717306838_1680717307112_1680717307112.jpg" alt="Healthcare for All" class="project-image">
-                    <h3>Healthcare for All</h3>
-                    <p>Support the local clinic in providing free medical check-ups and treatments to low-income families.</p>
-                    <a href="payment.html"><button class="btn primary">Donate</button></a>
+                <div class="form-group">
+                    <label for="description">Description</label>
+                    <textarea id="description" name="description" rows="5" required></textarea>
                 </div>
-                <div class="project-card">
-                    <img src="https://dacfoundation.org/frontend/db-assets/cause-images/1700368682-noticias_thebighand_5-1120x550.jpg" alt="Clean Water Initiative" class="project-image">
-                    <h3>Clean Water Initiative</h3>
-                    <p>Fund the installation of clean water facilities in remote areas to ensure safe drinking water for all.</p>
-                    <a href="payment.html"><button class="btn primary">Donate</button></a>
+                <div class="form-group">
+                    <label for="goal-amount">Goal Amount</label>
+                    <input type="number" id="goal-amount" name="goal-amount" required>
                 </div>
-                <div class="project-card">
-                    <img src="https://media.licdn.com/dms/image/D5612AQEyOLiGE7f8YQ/article-cover_image-shrink_600_2000/0/1709957737487?e=2147483647&v=beta&t=OEQxyQiLbdGNdFX8C1gL-wJ1iMP6XydBP8U50IUjywk" alt="Women Empowerment" class="project-image">
-                    <h3>Women Empowerment</h3>
-                    <p>Raise funds to support vocational training programs for women to help them gain financial independence.</p>
-                    <a href="payment.html"><button class="btn primary">Donate</button></a>
+                <div class="form-group">
+                    <label for="image-url">Image URL</label>
+                    <input type="url" id="image-url" name="image-url" required>
                 </div>
-                <div class="project-card">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEv_9EJjS5vtzAMi4dfNXpELC0M1NJs01pTQ&s" alt="Green India Campaign" class="project-image">
-                    <h3>Green India Campaign</h3>
-                    <p>Help plant trees and create green spaces in urban areas to combat pollution and promote a healthier environment.</p>
-                    <a href="payment.html"><button class="btn primary">Donate</button></a>
-                </div>
-            </div>
+                <button type="submit" class="btn primary">Submit Project</button>
+            </form>
         </section>
     </main>
 
