@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthcare for All</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <section id="project-intro">
+            <h1>Healthcare for All</h1>
+            <p>Support the local clinic in providing free medical check-ups and treatments to low-income families.</p>
+            <img src="https://www.livemint.com/lm-img/img/2023/04/05/1600x900/AIIMS_1680717306838_1680717307112_1680717307112.jpg" alt="Healthcare for All" class="project-image">
+        </section>
+
+        <section id="project-details">
+            <h2>Project Details</h2>
+            <p>This project aims to enhance healthcare access for low-income families by providing free medical check-ups, treatments, and essential healthcare services. The initiative focuses on preventive care and health education.</p>
+            <h3>Goals:</h3>
+            <ul>
+                <li>Provide free medical check-ups</li>
+                <li>Offer essential treatments and medications</li>
+                <li>Organize health education workshops</li>
+                <li>Improve overall community health standards</li>
+            </ul>
+        </section>
+
+        <section id="project-media">
+            <h2>Media Gallery</h2>
+            <div class="media-gallery" style="overflow-x: auto; white-space: nowrap;">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpEM9YWTVuwayDOf85zjvbilksyc-ifNTyUQ&s"  class="gallery-image" style="display: inline-block; width: 300px; height: 200px;">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBS__9L6HDg9cedh7QfbKq2FltemYyKlHmb9RxEx8aTXkxa8TbvjiYzQ2qVrLrgNxybDg&usqp=CAU"  class="gallery-image" style="display: inline-block; width: 300px; height: 200px;">
+                <img src="https://i0.wp.com/blog.petrieflom.law.harvard.edu/wp-content/uploads/2019/03/shutterstock_39745732.jpg?fit=2000%2C1335&ssl=1"  class="gallery-image" style="display: inline-block; width: 300px; height: 200px;">
+             </div>
+            <h3>Project Video</h3>
+            <video controls width="600">
+                <source src="https://videos.pexels.com/video-files/6011431/6011431-uhd_2560_1440_25fps.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </section>
+
+        <section id="donation">
+            <h2>Make a Donation</h2>
+            <form id="donation-form" onsubmit="handleSubmit(event)">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="amount">Donation Amount:</label>
+                    <input type="number" id="amount" name="amount" required>
+                </div>
+                <div class="form-group">
+                    <label for="payment-method">Payment Method</label>
+                    <select id="payment-method" name="payment-method" required>
+                        <option value="upi">UPI</option>
+                        <option value="debit">Debit Card</option>
+                        <option value="netbanking">Net Banking</option>
+                    </select>
+                </div>
+                <button type="submit">Donate</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 Project Contribute Space. All rights reserved.</p>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Green India Campaign</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <section id="project-intro">
+            <h1>Green India Campaign</h1>
+            <p>Help plant trees and create green spaces in urban areas to combat pollution and promote a healthier environment.</p>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEv_9EJjS5vtzAMi4dfNXpELC0M1NJs01pTQ&s" alt="Green India Campaign" class="project-image">
+        </section>
+
+        <section id="project-details">
+            <h2>Project Details</h2>
+            <p>This campaign aims to enhance urban greenery by planting trees and creating green spaces. The initiative will involve community participation to ensure sustainable growth and maintenance of these green areas.</p>
+            <h3>Goals:</h3>
+            <ul>
+                <li>Plant trees in urban areas</li>
+                <li>Create community gardens</li>
+                <li>Organize awareness programs on environmental conservation</li>
+                <li>Promote biodiversity and improve air quality</li>
+            </ul>
+        </section>
+
+        <section id="project-media">
+            <h2>Media Gallery</h2>
+            <div class="media-gallery" style="overflow-x: auto; white-space: nowrap;">
+                <img src="https://www.shutterstock.com/image-vector/green-leaf-india-map-geography-600nw-2086669294.jpg"  class="gallery-image" style="display: inline-block; width: 300px; height: 200px;">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSElT-nngbisfKWqGGoJglprz4ors6Z_8UkqQ&s"  class="gallery-image" style="display: inline-block; width: 300px; height: 200px;">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqNDN-f2URVoMvy3okg0kTdEabVabGoov6uA&s"  class="gallery-image" style="display: inline-block; width: 300px; height: 200px;">
+             </div>
+            <h3>Project Video</h3>
+            <video controls width="600">
+                <source src="https://videos.pexels.com/video-files/4684305/4684305-hd_1920_1080_25fps.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </section>
+
+        <section id="donation">
+            <h2>Make a Donation</h2>
+            <form id="donation-form" onsubmit="handleSubmit(event)">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="amount">Donation Amount:</label>
+                    <input type="number" id="amount" name="amount" required>
+                </div>
+                <div class="form-group">
+                    <label for="payment-method">Payment Method</label>
+                    <select id="payment-method" name="payment-method" required>
+                        <option value="upi">UPI</option>
+                        <option value="debit">Debit Card</option>
+                        <option value="netbanking">Net Banking</option>
+                    </select>
+                </div>
+                <button type="submit">Donate</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 Project Contribute Space. All rights reserved.</p>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+</html>

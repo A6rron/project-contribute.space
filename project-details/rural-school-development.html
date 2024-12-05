@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rural School Development</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <section id="project-intro">
+            <h1>Rural School Development</h1>
+            <p>Help build and equip a new school in a rural village to provide quality education to underprivileged children.</p>
+            <img src="https://classplusapp.com/growth/wp-content/uploads/2022/08/5-Tips-to-Start-a-Successful-Rural-School.jpg" alt="Rural School Development" class="project-image">
+        </section>
+
+        <section id="project-details">
+            <h2>Project Details</h2>
+            <p>This project aims to establish a fully functional school in a rural area where children lack access to quality education. The school will provide necessary resources, trained teachers, and a safe learning environment.</p>
+            <h3>Goals:</h3>
+            <ul>
+                <li>Build classrooms and facilities</li>
+                <li>Provide educational materials</li>
+                <li>Hire qualified teachers</li>
+                <li>Organize extracurricular activities</li>
+            </ul>
+        </section>
+
+        <section id="project-media">
+            <h2>Media Gallery</h2>
+            <div class="media-gallery" style="overflow-x: auto; white-space: nowrap;">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQk21khuIpuxwKLpJCPZ7bDEj7GIhEr62hjag&s"  class="gallery-image" style="display: inline-block; width: 300px; height: 200px;">
+                <img src="https://thumbs.dreamstime.com/b/rural-education-india-23634712.jpg"  class="gallery-image" style="display: inline-block; width: 300px; height: 200px;">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPDd5XQpXBmJ7a_WHXXaVoNmMfrkudRxnndA3xB7jlhCxs7c36DKCraF-8u9N-yt55A_0&usqp=CAU"  class="gallery-image" style="display: inline-block; width: 300px; height: 200px;">
+             </div>
+            <h3>Project Video</h3>
+            <video controls width="600">
+                <source src="https://videos.pexels.com/video-files/12851353/12851353-uhd_2560_1440_60fps.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </section>
+
+        <section id="donation">
+            <h2>Make a Donation</h2>
+            <form id="donation-form" onsubmit="handleSubmit(event)">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="amount">Donation Amount:</label>
+                    <input type="number" id="amount" name="amount" required>
+                </div>
+                <div class="form-group"></div>
+                    <label for="payment-method">Payment Method</label>
+                    <select id="payment-method" name="payment-method" required>
+                        <option value="upi">UPI</option>
+                        <option value="debit">Debit Card</option>
+                        <option value="netbanking">Net Banking</option>
+                    </select>
+                </div>
+                <button type="submit">Donate</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 Project Contribute Space. All rights reserved.</p>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+</html>

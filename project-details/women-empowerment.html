@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Women Empowerment</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <section id="project-intro">
+            <h1>Women Empowerment</h1>
+            <p>Raise funds to support vocational training programs for women to help them gain financial independence.</p>
+            <img src="https://media.licdn.com/dms/image/D5612AQEyOLiGE7f8YQ/article-cover_image-shrink_600_2000/0/1709957737487?e=2147483647&v=beta&t=OEQxyQiLbdGNdFX8C1gL-wJ1iMP6XydBP8U50IUjywk" alt="Women Empowerment" class="project-image">
+        </section>
+
+        <section id="project-details">
+            <h2>Project Details</h2>
+            <p>This project aims to empower women by providing them with vocational training and resources to help them achieve financial independence. The initiative focuses on skill development and entrepreneurship.</p>
+            <h3>Goals:</h3>
+            <ul>
+                <li>Provide vocational training programs</li>
+                <li>Support women entrepreneurs</li>
+                <li>Organize workshops on financial literacy</li>
+                <li>Promote gender equality and women's rights</li>
+            </ul>
+        </section>
+
+        <section id="project-media">
+            <h2>Media Gallery</h2>
+            <div class="media-gallery" style="overflow-x: auto; white-space: nowrap;">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiadGt6e96gGLQMmQuT3L4UakhPu5a7ePP5w&s"  class="gallery-image" style="display: inline-block; width: 300px; height: 200px;">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDC4AvrxD9mqg0eF1BCGXnj2YEmkBVBOzHHAYfStVcjMFXLKih8raPrCbJNRTYLhZflzY&usqp=CAU"  class="gallery-image" style="display: inline-block; width: 300px; height: 200px;">
+                <img src="https://www.narayanseva.org/wp-content/uploads/2023/08/Blog-banner-2023-4-1.jpg"  class="gallery-image" style="display: inline-block; width: 300px; height: 200px;">
+             </div>
+            <h3>Project Video</h3>
+            <video controls width="600">
+                <source src="https://videos.pexels.com/video-files/9324935/9324935-uhd_2732_1440_25fps.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </section>
+
+        <section id="donation">
+            <h2>Make a Donation</h2>
+            <form id="donation-form" onsubmit="handleSubmit(event)">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="amount">Donation Amount:</label>
+                    <input type="number" id="amount" name="amount" required>
+                </div>
+                <div class="form-group">
+                    <label for="payment-method">Payment Method</label>
+                    <select id="payment-method" name="payment-method" required>
+                        <option value="upi">UPI</option>
+                        <option value="debit">Debit Card</option>
+                        <option value="netbanking">Net Banking</option>
+                    </select>
+                </div>
+                <button type="submit">Donate</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 Project Contribute Space. All rights reserved.</p>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+</html>

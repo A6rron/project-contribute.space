@@ -42,3 +42,26 @@ setInterval(() => {
 }, 2000);
 
 
+    function handleSubmit(event) {
+        event.preventDefault(); // Prevent the default form submission
+        const form = document.getElementById('project-form');
+        if (form.checkValidity()) { // Check if the form is valid
+            alert('Fundraiser project submitted for review');
+            form.submit(); // Submit the form if valid
+        } else {
+            // Optionally, you can show a message if the form is invalid
+            alert('Please fill out all required fields.');
+        }
+    }
+
+    function handleSubmit(event) {
+        event.preventDefault(); // Prevent the default form submission
+        const form = document.getElementById('donation-form'); // Ensure this matches your form ID
+        if (form.checkValidity()) { // Check if the form is valid
+            alert('Donation Successful! Thank you for your contribution.'); // Alert for successful donation
+            form.submit(); // Submit the form if valid
+        } else {
+            // Optionally, you can show a message if the form is invalid
+            alert('Please fill out all required fields.');
+        }
+    }
